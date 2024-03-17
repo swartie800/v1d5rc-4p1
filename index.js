@@ -24,12 +24,12 @@ app.use(function (req, res, next) {
 
 app.get('/', (req, res) => {
     res.status(200).json({
-        intro: "Unofficial vidsrc.to API",
+        intro: "Unofficial",
         routes: {
-            movie: "/:movieTMDBid",
-            show: "/:showTMDBid/:seasonNumber/:episodeNumber"
+            movie: "/id",
+            show: "/id/s/e"
         },
-        author: "by fr0zen"
+        author: "swartie8"
     })
 })
 
